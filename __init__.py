@@ -21,7 +21,7 @@ bl_info = {
     "author": "Edward S. White",
     "description": "Viewport render only frames with timeline markers",
     "blender": (2, 80, 0),
-    "version": (0, 3, 6),
+    "version": (1, 0, 0),
     "location": "View3D > View Menu > Viewport Render Markers",
     "category": "Render"
 }

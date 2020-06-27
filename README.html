@@ -1,0 +1,38 @@
+<h1>Viewport Render Markers Blender Add-on</h1>
+<p>This add-on for Blender will do a viewport render for any scene that has markers in the timeline. It is great for previewing the pacing of an animation. It is similar in function to the Viewport Render Keyframes option in Blender.</p>
+<h2>Features</h2>
+<ul>
+<li>Quickly render a preview animation</li>
+<li>Render the same frame until a new timeline marker is reached</li>
+</ul>
+<h2>Requirements</h2>
+<ul>
+<li>Blender 2.8 or higher</li>
+</ul>
+<h2>Restrictions</h2>
+<p>The Viewport Render Markers add-on will only render movie file formats and the scene must have markers in the timeline.</p>
+<h2>Installation</h2>
+<p>In Blender's Edit menu, select &quot;Preferences...&quot; and then choose the Add-ons tab. Press the &quot;Install...&quot; button and select this zip file.</p>
+<h2>How to use</h2>
+<ol>
+<li>Add markers to the timeline</li>
+<li>In the View menu of the 3D Viewport, select Viewport Render Holding on Markers.</li>
+</ol>
+<h3>Add markers to the timeline</h3>
+<p>This addon will not work unless there are markers in the timeline. Markers can be created anywhere on the timeline. Setting a marker is like setting a keyframe. Move the timeline cursor to where a marker is to be set. In the timeline Marker menu, select &quot;Add Marker&quot;.</p>
+<p><img src="timeline-addmarker.png" alt="Add marker in timeline Marker menu"></p>
+<p>A new marker will appear below the timeline. Its name will correspond to the frame it was set on. Frame 1 will end up with the name F_01.</p>
+<p><img src="timeline-markeradded.png" alt="A marker is set in timeline"></p>
+<h3>Viewport Render Holding on Markers</h3>
+<p>In the View menu of the 3D Viewport, select Viewport Render Holding on Markers.</p>
+<p><img src="viewportmarkersmenu.png" alt="View menu &gt; Viewport Render Holding on Markers"></p>
+<p>A new window will pop up showing the output location. If it is not correct, press the Escape key on the keyboard. Change the scene output properties and then go back to the Render menu and select &quot;Render Images at Markers&quot;.</p>
+<p><img src="viewportrenderdialog.png" alt="Output file location dialog window"></p>
+<p>After pressing OK, Blender will seem to be frozen or like it has crashed. Navigate to the output folder to see the images being saved.</p>
+<p>When the render process is done, the output file location window will disappear and a new window may open to report that the render has finished. Moving the mouse away from the window will make it disappear.</p>
+<p><img src="viewportrenderfinished.png" alt="Finished Rendering window"></p>
+<h3>Optional Render Monitoring</h3>
+<p>For scenes with many frames to render, the rendering process can be monitored by opening the Blender System Console. From the Window menu of Blender, select Toggle System Console.</p>
+<p><img src="ToggleSystemConsole.png" alt="Toggle System Console"></p>
+<p>The System Console window will list each frame as it is rendered. A temporary object is deleted at the end of the rendering process.</p>
+<p><img src="blendersystemconsole.png" alt="System Console window"></p>
